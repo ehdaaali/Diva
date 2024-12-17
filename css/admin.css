@@ -1,0 +1,403 @@
+.body {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 98%;
+}
+
+.sideNav {
+    margin-top: 5%;
+    margin-left: 2%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    background-image: linear-gradient(157deg, #74EBD5 0%, #87bff3 33%, #f6eacb 66%, #efa79e 100%);
+    border-radius: 10%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border: 5px groove rgba(0, 0, 0, 0.6);
+
+}
+.hidden {
+    display: none;
+}
+
+.logo {
+    width: 100%;
+    height: 40%;
+}
+
+.logoImg {
+    height: 100%;
+    width: 100%;
+    padding: 10% 0;
+
+}
+
+.asideNav {
+
+    margin-top: 10%;
+    height: 60%;
+    width: 100%;
+
+}
+
+.nav-item {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+
+}
+
+.links {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.sideNav a:hover {
+    color: #ccc;
+}
+
+
+/* Add dropdown list styles */
+.dropdown-list {
+    display: none;
+}
+
+.nav-item:hover .dropdown-list {
+    display: block;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    border: 1px solid #444;
+}
+
+.dropdown-list li {
+    margin-bottom: 10px;
+}
+
+.dropdown-list a {
+    color: #fff;
+}
+
+.dropdown-list a:hover {
+    color: #ccc;
+}
+
+.main {
+    margin-top: 2%;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mainHeader {
+    width: 90%;
+    height: 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #74EBD5;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border: 5px groove rgba(0, 0, 0, 0.6);
+}
+/* Add toggle button styles */
+.toggle-btn {
+    background-color: #33333300;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+
+}
+
+.toggle-btn:hover {
+    background-color: #737373;
+}
+
+.search {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.welcomeUser {
+    width: 40%;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.userImg {
+    height: 100%;
+    width: 25%;
+    border-radius: 50%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+}
+
+.mainSection {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 3%;
+}
+
+.table-responsive {
+    /* overflow: scroll; */
+    overflow-x: auto;
+}
+
+#table {
+    position: relative;
+    border-collapse: collapse;
+    border-radius: 10px;
+    width: 100%;
+    height: fit-content;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* font-size: 12px; */
+    border: 5px groove rgba(0, 0, 0, 0.6);
+    /* margin-bottom: 10%; */
+ 
+}
+
+#table th {
+    background-color: #5c5c5c;
+    color: #fff8f8;
+    height: 40px;
+    font-size: 120%;
+    padding: 3px;
+    text-shadow: -4px 3px 1px #27272794;
+}
+
+td {
+    background-color: #d1e8fd;
+    color: #000;
+    height: auto;
+    padding: 3px;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+
+.hiddenCard {
+    width: 20%;
+    height: 100%;
+    background-color: #efa79e;
+    border-radius: 2%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border: 5px groove rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+footer {
+    height: 27vh;
+    width: 100%;
+    background-image: url('../images/g.jpg');
+    filter: blur(0.2px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 40%;
+    border-radius: 26px;
+    box-shadow: -13px -13px 19px #d9cece,
+        13px 13px 19px #fff6f6;
+    position: relative;
+    bottom: 0;
+    margin-top: 7px;
+    border: 5px groove rgba(0, 0, 0, 0.6);
+}
+
+.footer {
+    height: 20vh;
+    width: 100%;
+    background-color: rgba(205, 203, 203, 0.8);
+    filter: blur(0.2px);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: left;
+    gap: 1%;
+    border-radius: 26px;
+    position: sticky;
+    bottom: 0;
+}
+
+.footerSection {
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    padding: 10px;
+
+}
+
+.footerSection a {
+    font-size: 10px;
+    color: white;
+}
+
+/* Responsive for small screens */
+@media screen and (max-width: 600px) {
+    .body {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .sideNav {
+        margin-top: 20%;
+        flex-direction: row;
+        gap: 3px;
+        width: 94%;
+        height: 13vh;
+        border-radius: 3%;
+
+    }
+
+    .sidenav-list {
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+
+
+    }
+
+    .sidenav-list li {
+        margin-right: 2px;
+
+    }
+
+    .sidenav-list a {
+        font-size: 14px;
+    }
+
+    .links {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-list {
+        position: relative;
+    }
+
+    .dropdown-list a {
+        width: 100%;
+    }
+    .main{
+        margin-top: 13%;
+    }
+
+        .mainHeader {
+            position: fixed;
+            top: 1px;
+            width: 90%;
+            height: 10vh;
+    
+        }
+
+    #table {
+        width: auto;
+        position: unset;
+        /* margin-top: 50px; */
+        /* height: 100vh; */
+    }
+
+    /* #hiddenCard {
+        display: none;
+    } */
+    footer{
+        position: relativ;
+        bottom: 0;
+    }
+
+
+
+}
+
+.modal-wrapper {
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.915);
+    /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* backdrop-filter: blur(5px); */
+    /* Blurs the background */
+    
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: rgb(12, 12, 12);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    /* Adjust as needed */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    position: relative;
+    color: #74EBD5;
+    border-radius: 25%;
+}
+.modal-content h2{
+    color: #74EBD5;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    z-index: 2000;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Ensure the back screen of website behind modal-wrapper gets blurred when modal is active */
+
+
+.modal-content:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+background: rgba(0, 0, 0, 0.74);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    z-index: -1;
+}
+
+* Apply the blur effect to the background */ .blurred {
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+}
+
+/* Ensure modal is unaffected by the blur */
+body.modal-active .modal-wrapper {
+    backdrop-filter: none;
+    /* No blur on the modal itself */
+}

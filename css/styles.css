@@ -1,0 +1,377 @@
+.testimonialHeader{
+    background-color: #D1E9F6;
+    height: 70vh;
+}
+
+
+.header-content {
+   display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.header-title {
+    font-size: 130px;
+    color: rgb(40, 1, 1);
+    font-weight: 900;
+    padding-top: 20%;
+    margin-left: 5vw;
+    /* margin-bottom: 40vh; */
+  animation: testiAni 2s ease 0s 1 normal forwards;
+}
+@keyframes testiAni {
+  0% {
+    opacity: 0;
+    transform: translateY(-250px) rotate(-200deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.header-img {
+    max-height: 50vh;
+    width: 30vw;
+    margin-bottom: -40%;
+    margin-left: 20%;
+    clip-path: polygon(13% 0, 87% 0, 100% 100%, 0% 100%);
+}
+
+@media screen and (max-width: 768px) {
+    .header-content {
+      margin-top: 10px;
+        padding: 40px 0;
+        height: 30vh;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header-title {
+        font-size: 50px;
+        text-align: center;
+        margin-top: 10%;
+        /* margin-left: 5vw; */
+        /* margin-bottom: -7vh; */
+
+    }
+
+    .header-img {
+       
+        width: auto;
+        margin-left: -10%;
+        padding-bottom: 15%;
+        margin-bottom: 1%;
+        
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 988px) {
+    .header-content {
+
+        padding: 10px 0;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header-title {
+     
+        font-size: 70px;
+        text-align: center;
+        
+      
+
+    }
+
+    .header-img {
+        height: 80vh;
+          width: 50vw;
+          margin-bottom: -60%;
+          margin-left: 20%;
+    }
+
+}
+
+@media screen and (min-width: 989px) {
+    .header-content {    
+        padding: 10px 0;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+  .header-title {
+      font-size: 95px;
+      font-weight: 40%;
+      text-align: center;  
+      margin-left: 20%;  
+    }  
+    .header-img {
+      height: 90vh;
+      width: 30vw;
+      margin-bottom: -35%;
+      margin-left: 5vw;
+    }
+}
+
+
+  .testimonialMain{
+    padding: 20px;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    /* height: auto; */
+    margin-bottom: 30px;
+   
+
+  }
+  .testimonial{
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows:repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px 40px;
+    margin-top: 20px;
+    height: auto;
+  }
+  .personImg{
+    border-radius: 50%;
+    border : 10px solid rgb(255, 253, 253);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .person1{
+    grid-area: 1/1/2/2; 
+  }
+  .person2{
+    grid-area: 2/1/4/2;  
+  }
+  .person3{
+    grid-area: 1/2/4/3;  
+    margin-top: 40px;
+  }
+  .person4{
+    grid-area: 4/1/6/3;  
+  }
+  .person5{
+    grid-area: 1/3/3/4;  
+  }
+  .person6{
+    grid-area: 3/3/6/4;  
+  }
+  .person7{
+    grid-area: 1/4/2/6;  
+  }
+  .person9{
+    grid-area: 4/4/6/6;  
+  }
+  .person8{
+    grid-area: 2/4/4/6;  
+  }
+  .testimonialCard{
+    width:80%;
+    padding: 10px;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;    
+    align-items: center;
+    flex-direction: row;
+    height: auto;
+    gap: 10px;
+  }
+  .testimonialContent{
+    margin-left: 20px;
+  }
+  #per-1-img{
+ 
+   /* margin-right: -100%; */
+   margin-left: 5%;
+  }
+  .person-2{
+    display: flex;
+      flex-direction: column;
+      background-color: #F6EACB;
+      background-image: url('../images/testimonials/quotation-mark-computer-icons-symbol-quote.jpg');
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: right bottom;
+  
+      
+  }
+  .personData2{
+    margin-top: -10%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* gap:10%; */
+  }
+ .personName2{
+    padding-top: 20%;
+    font-size: 18px;
+ }
+.person-3{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20%;
+  background-color: #F1D3CE;
+  background-image: url('../images/testimonials/quotation-mark.svg');
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: left bottom;
+    
+
+}
+.p-img-3{
+  margin-top: -30%;
+  margin-bottom: 0%;
+}
+.person-4{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #EECAD5;
+  background-image: url('../images/testimonials/quotation-mark.svg');
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: left top;
+    margin-bottom: 2%;
+    
+}
+.imgGroup{
+  display: flex;
+  flex-direction: row;
+  /* gap: 10px; */
+  background-color: none;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 77%;
+  margin-left: 4%;
+}
+.personImgGroup{
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.personImgSqr5{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.person-8{
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  background-color: #F6EACB;
+  background-image: url("../images/testimonials/quotation-mark-computer-icons-symbol-quote.jpg");
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: right bottom;
+
+}
+.personImgSqr8{
+  width: 200px;  
+  object-fit: auto;
+  height: 300px;
+
+}
+.personData9{
+  display: flex;
+  flex-direction: column;
+}
+
+ 
+ /* Medium screens (max-width: 768px) */
+ @media screen and (max-width: 900px) {
+   .testimonial {
+
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap; 
+   }
+   .person-3{
+    margin-top: 0%;
+   }
+   #per-2-img{
+    width: 100px;
+    height: 100px;
+    
+   }
+     .personImgSqr8 {
+       width: 100px;
+       object-fit: auto;
+       height: 150px;
+  
+     }
+         .personData9 {
+           width: 43%;
+         }
+ }
+
+ @media screen and (min-width: 900px) and (max-width: 1200px){
+    .person5 {
+        grid-area: 6/1/8/2;
+      }
+    
+      .person6 {
+        grid-area: 6/2/8/3;
+      }
+    
+      .person7 {
+        grid-area: 8/1/9/3;
+      }
+    
+      .person9 {
+        grid-area: 9/1/11/3;
+      }
+    
+      .person8 {
+        grid-area: 11/1/13/3;
+      }
+   }
+     @media (min-width: 1200px) and (max-width: 1440px) {
+          .person4 {
+            grid-area: 3/1/4/4;
+          } 
+        .person5 {
+          grid-area: 1/3/2/4;
+          
+        }
+      
+        .person6 {
+          grid-area: 2/3/3/4;
+        }
+      
+        .person7 {
+          grid-area: 4/1/5/4;
+        }
+      
+        .person9 {
+          grid-area: 5/1/6/4;
+        }
+      
+        .person8 {
+          grid-area: 6/1/7/4;
+        }
+      }
+

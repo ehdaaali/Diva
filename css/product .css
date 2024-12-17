@@ -1,0 +1,36 @@
+/* #product-container{
+    padding: 30px;
+}
+
+ img{
+    height: 400px;
+    object-fit: cover;
+} */
+ .section-title{
+    margin-top: 10%;
+ }
+ .product-card{
+    width: 60%;
+    margin: 1%;
+ }
+ .product-img{
+    object-fit: contain;
+
+ }
+ 
+.cart-btn{
+    padding: 3px 8px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    color: #c7af7a;
+    /* background: rgba(231, 232, 231, 0.1); */
+    border: 0px solid transparent;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+
+}
+.cart-btn:hover{
+    border: 0px solid transparent;
+
+}

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/reboot.css">
+    <link rel="stylesheet" href="./css/layouts.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+
+    <title>Home</title>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+            <header id="homeHeader">
+                <!-- Start Top Nav -->
+                <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="nav_top">
+                    <div class="container text-light">
+                        <div class="w-100 d-flex justify-content-between">
+                            <div>
+                                <i class="fa fa-envelope mx-2"></i>
+                                <a class="navbar-sm-brand text-light text-decoration-none"
+                                    href="mailto:info@company.com">Diva@gmail.com</a>
+                                <i class="fa fa-phone mx-2"></i>
+                                <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                            </div>
+                            <div>
+                                <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored">
+                                    <i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                                <a class="text-light" href="https://www.instagram.com/" target="_blank"><i
+                                        class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                                <a class="text-light" href="https://twitter.com/" target="_blank"><i
+                                        class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+                                <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i
+                                        class="fab fa-linkedin fa-sm fa-fw"></i></a>
+                                <a class="text-light" href="login.html" target="_blank"><i
+                                        class="fa-solid fa-right-to-bracket"></i></a>
+                                <!-- <a class="text-light position-relative text-decoration-none" href="#" target="_blank"><i
+                                        class="fa fa-fw fa-cart-arrow-down"></i>
+                                    <span
+                                        class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Close Top Nav -->
+            
+            
+                <!-- Main Navbar -->
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container main-nav">
+                        <a class="navbar-brand" href="#">
+                            <img class="animated rubberBand" id="diva-logo" src="./images/blackDiva.png" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" id="navbarToggler" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse nav-links" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="aboutUs.html">About</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" id="shopDropdown" onclick="toggleDropdown(event)">
+                                        Shop
+                                    </a>
+                                    <ul class="dropdown-menu" id="dropdownMenu">
+                                        <li class="nav-item"><a class="nav-link" href="skinCare.html">Skin Care</a></li>
+                                        <li class="nav-item" style="width:max-content"><a class="nav-link" href="sportwear.html">Sport Wear</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="articles.html">Articles</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contactUs.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            
+                <div class="header-content col-12">
+                    <div class="" id="mainHeader">
+                        <h1 class="header-title">WELCOME TO DIVA</h1>
+            
+                    </div>
+                </div>
+                <!-- </div> -->
+            
+            </header>
+
+<section id="homeAbout">
+    <div class="container">
+        <div class="row">
+          
+            <div class="col-md-6"  id="homeAboutText">
+                <h1>About Diva</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+
+            <div class="col-md-6">
+                <img class="img-fluid" src="./images/aa.png" alt="Home About">
+            </div>       
+
+        </div>
+    </div>
+</section>
+
+<section id="homeServices">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-12" id="homeServicesText">
+                <div>
+                    <h1>Our Services</h1>
+                    </div>
+                    <div class="serviceCard">
+                    
+                    <div class="book">
+                       <a  class="bookpic" href="skinCare.html"><img class="bookpic" src="./images/skin.jpg" alt="" srcset=""></a>
+                        <div class="cover">
+                            <!-- <p>Skin Care</p> -->
+                             <img src="./images/bg/066f5ef9de52efbaee71f4515ad84c31.jpg" alt="" srcset="" class="bookCoverImage" >
+                        </div>
+                    </div>
+                    <div class="book">
+                        <a class="bookpic" href="sportwear.html"><img  class="bookpic" src="./images/sport.jpg" alt=""></a>
+                        <div class="cover">
+                            <!-- <p>Sport Wear</p> -->
+                            <img src="./images/bg/26c4907b882837bcaadbefc561554db7.jpg" alt="" srcset="" class="bookCoverImage">
+                        </div>
+                    </div>
+                    <div class="book">
+                        <a class="bookpic" href="article.html"><img src="./images/article.jpg" alt="" srcset=""  class="bookpic"></a>
+                        <div class="cover">
+                            <!-- <p>Articles</p> -->
+                             <img src="./images/bg/f8006a3b5ef06e6319e1da140069a4f8.jpg" alt="" srcset="" class="bookCoverImage" >
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="contactUsSection">
+    <div class=" container contactUsSectionContainer">
+        <div class="row">
+            <div class="col-md-12" >
+        <form class="form col-md-12">
+            <div class="form_front col-md-12">
+                <div class="contactInputs col-md-6">
+                    <input type="text" class="input" placeholder="Username">
+                    <input type="email" class="input" placeholder="Email">
+                    <input type="text" class="input" placeholder="Message">
+                    <button class="btn">Contact</button>
+                </div>
+                <div class="form_details col-md-6">Contact Us</div>
+            </div>
+        </form>
+       </div> 
+    </div>
+    </div>
+</section>
+
+
+<section id="homeTeam">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="homeTeamText">
+                <div>
+                 <h1>Our Team</h1>   
+                </div>                
+                <div class="teamCard">
+            <div class="card">
+                <button class="mail">
+                    <svg class="lucide lucide-mail" stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
+                        stroke="currentColor" fill="none" viewBox="0 0 24 24" height="24" width="24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect rx="2" y="4" x="2" height="16" width="20"></rect>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </svg>
+                </button>
+                <div class="profile-pic"><img src="./images/team/team-03.jpg" alt="" srcset="" class="img-fluid"></div>
+                <div class="bottom">
+                    <div class="content">
+                        <span class="name">My Name</span>
+                        <span class="about-me">Lorem ipsum dolor sit amet consectetur adipisicinFcls
+                        </span>
+                    </div>
+                    <div class="bottom-bottom">
+                        <div class="social-links-container">
+                            <svg viewBox="0 0 16 15.999" height="15.999" width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path transform="translate(6 598)"
+                                    d="M6-582H-2a4,4,0,0,1-4-4v-8a4,4,0,0,1,4-4H6a4,4,0,0,1,4,4v8A4,4,0,0,1,6-582ZM2-594a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4A4.005,4.005,0,0,0,2-594Zm4.5-2a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0,6.5-596ZM2-587.5A2.5,2.5,0,0,1-.5-590,2.5,2.5,0,0,1,2-592.5,2.5,2.5,0,0,1,4.5-590,2.5,2.5,0,0,1,2-587.5Z"
+                                    data-name="Subtraction 4" id="Subtraction_4"></path>
+                            </svg>
+                            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                                </path>
+                            </svg>
+            
+                            <svg viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <button class="button" onclick="window.location.href='team.html'" onclick="window.location.href='team.html'">Contact Me</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <button class="mail">
+                    <svg class="lucide lucide-mail" stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
+                        stroke="currentColor" fill="none" viewBox="0 0 24 24" height="24" width="24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect rx="2" y="4" x="2" height="16" width="20"></rect>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </svg>
+                </button>
+                <div class="profile-pic"><img src="./images/team/team-04.jpg" alt="" srcset=""  class="img-fluid"></div>
+                <div class="bottom">
+                    <div class="content">
+                        <span class="name">My Name</span>
+                        <span class="about-me">Lorem ipsum dolor sit amet consectetur adipisicinFcls
+                        </span>
+                    </div>
+                    <div class="bottom-bottom">
+                        <div class="social-links-container">
+                            <svg viewBox="0 0 16 15.999" height="15.999" width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path transform="translate(6 598)"
+                                    d="M6-582H-2a4,4,0,0,1-4-4v-8a4,4,0,0,1,4-4H6a4,4,0,0,1,4,4v8A4,4,0,0,1,6-582ZM2-594a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4A4.005,4.005,0,0,0,2-594Zm4.5-2a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0,6.5-596ZM2-587.5A2.5,2.5,0,0,1-.5-590,2.5,2.5,0,0,1,2-592.5,2.5,2.5,0,0,1,4.5-590,2.5,2.5,0,0,1,2-587.5Z"
+                                    data-name="Subtraction 4" id="Subtraction_4"></path>
+                            </svg>
+                            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                                </path>
+                            </svg>
+            
+                            <svg viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <button class="button" onclick="window.location.href='team.html'">Contact Me</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <button class="mail">
+                    <svg class="lucide lucide-mail" stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
+                        stroke="currentColor" fill="none" viewBox="0 0 24 24" height="24" width="24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect rx="2" y="4" x="2" height="16" width="20"></rect>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </svg>
+                </button>
+                <div class="profile-pic"><img src="./images/team/team-1.jpg" alt="" srcset=""  class="img-fluid"></div>
+                <div class="bottom">
+                    <div class="content">
+                        <span class="name">My Name</span>
+                        <span class="about-me">Lorem ipsum dolor sit amet consectetur adipisicinFcls
+                        </span>
+                    </div>
+                    <div class="bottom-bottom">
+                        <div class="social-links-container">
+                            <svg viewBox="0 0 16 15.999" height="15.999" width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path transform="translate(6 598)"
+                                    d="M6-582H-2a4,4,0,0,1-4-4v-8a4,4,0,0,1,4-4H6a4,4,0,0,1,4,4v8A4,4,0,0,1,6-582ZM2-594a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4A4.005,4.005,0,0,0,2-594Zm4.5-2a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0,6.5-596ZM2-587.5A2.5,2.5,0,0,1-.5-590,2.5,2.5,0,0,1,2-592.5,2.5,2.5,0,0,1,4.5-590,2.5,2.5,0,0,1,2-587.5Z"
+                                    data-name="Subtraction 4" id="Subtraction_4"></path>
+                            </svg>
+                            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                                </path>
+                            </svg>
+            
+                            <svg viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <button class="button" onclick="window.location.href='team.html'">Contact Me</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <button class="mail">
+                    <svg class="lucide lucide-mail" stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
+                        stroke="currentColor" fill="none" viewBox="0 0 24 24" height="24" width="24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect rx="2" y="4" x="2" height="16" width="20"></rect>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </svg>
+                </button>
+                <div class="profile-pic"><img src="./images/team/team-2.jpg" alt="" srcset="" class="img-fluid"></div>
+                <div class="bottom">
+                    <div class="content">
+                        <span class="name">My Name</span>
+                        <span class="about-me">Lorem ipsum dolor sit amet consectetur adipisicinFcls
+                        </span>
+                    </div>
+                    <div class="bottom-bottom">
+                        <div class="social-links-container">
+                            <svg viewBox="0 0 16 15.999" height="15.999" width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path transform="translate(6 598)"
+                                    d="M6-582H-2a4,4,0,0,1-4-4v-8a4,4,0,0,1,4-4H6a4,4,0,0,1,4,4v8A4,4,0,0,1,6-582ZM2-594a4,4,0,0,0-4,4,4,4,0,0,0,4,4,4,4,0,0,0,4-4A4.005,4.005,0,0,0,2-594Zm4.5-2a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0,6.5-596ZM2-587.5A2.5,2.5,0,0,1-.5-590,2.5,2.5,0,0,1,2-592.5,2.5,2.5,0,0,1,4.5-590,2.5,2.5,0,0,1,2-587.5Z"
+                                    data-name="Subtraction 4" id="Subtraction_4"></path>
+                            </svg>
+                            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                                </path>
+                            </svg>
+            
+                            <svg viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <button class="button" onclick="window.location.href='team.html'">Contact Me</button>
+                    </div>
+                </div>
+            </div>
+                   
+                <!-- </div> -->
+                </div>
+                </div>
+                </div>
+                </div>
+                </section>
+              
+               
+
+                <section class="homeTestimonialSection">
+                    <div class="container">
+                        <div class="row">
+                            <h2 style="font-size: 30px; text-align: center;font-family: 'Courier New', Courier, monospace;">What Our Clients Say About Us</h2>
+                            <div class="col-md-12" id="homeTestimonial">
+                                
+                                <div class="homeTestimonialPic col-md-6">
+                                    <img src="./images/bg/image_NR5t0OL9_1725545124898_raw.jpg" alt="" class="">
+                                </div>
+                                <div class="carousel col-md-6 col-sm-3">
+                                    <div class="carousel-images">
+                                        <div class="carousel-card active">
+                                            <img src="./images/team/author.png" alt="Image 1" class="card-image img-fluid">
+                                            <div class="card-content">
+                                                <h3 class="card-title">Adam F.</h3>
+                                                <p class="card-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, cumque debitis voluptate eos magnam deserunt placeat, cupiditate exercitationem corrupti iusto quos incidunt libero voluptatum dolores sint! Perferendis, perspiciatis? Soluta, nesciunt!</p>
+                                                <button class="card-button"  onclick="window.location.href='testimonials.html'">See More</button>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="carousel-card ">
+                                            <img src="./images/team/author2.png" alt="Image 2" class="card-image">
+                                            <div class="card-content">
+                                                <h3 class="card-title">John A.</h3>
+                                                <p class="card-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam quis cupiditate asperiores inventore perferendis, quas, quia vel beatae id qui aperiam pariatur hic nihil quaerat maxime veniam assumenda veritatis nemo?</p>
+                                                <button class="card-button"  onclick="window.location.href='testimonials.html'">See More</button>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="carousel-card">
+                                            <img src="./images/team/author3.png" alt="Image 3" class="card-image">
+                                            <div class="card-content">
+                                                <h3 class="card-title">Smanta A</h3>
+                                                <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, consectetur cum. Harum delectus consequatur itaque, earum id vel minima corrupti, blanditiis, excepturi eligendi praesentium eaque architecto! Dolorem praesentium eius suscipit.</p>
+                                                <button class="card-button"  onclick="window.location.href='testimonials.html'">See More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-button prev" onclick="changeSlide(-1)">&#10094;</button>
+                                    <button class="carousel-button next" onclick="changeSlide(1)">&#10095;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                </section>
+
+
+<footer>
+
+    <div class="footer">
+
+        <!-- <div class="footerSection">
+            <h5>Articles</h5>
+            <a href="skinCare.html">Skin Care</a>
+            <a href="sportwear.html">Sport</a>
+            <a href="article.html">Public</a>
+        </div> -->
+        <div class="footerSection">
+            <h5>Main</h5>
+            <a href="home.html">Home</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="contactUs.html">Contact Us</a>
+            <a href="team.html">Our Team</a>
+            <a href="testimonials.html">Testimonials</a>
+        </div>
+        <div class="footerSection">
+<h5>Articles</h5>
+<a href="articles.html">Public Articles</a>
+        </div>
+        <div class="footerSection">
+            <h5>E-commerce</h5>
+            <a href="skinCare.html">Skin Care Products</a>
+            <a href="sportwear.html">Sport Wear</a>
+            
+        </div>
+
+    </div>
+    <h1 style="text-align: center;color:white;font-style: italic;font-family: 'Courier New', Courier, monospace;">
+        Keep
+        your SMILE you are a Diva</h1>
+</footer>
+        
+   
+</div>
+</div>
+
+<script>
+   
+</script>
+<script src="./js/navToggler.js"></script>
+<script>
+    let currentSlide = 0;
+        const cards = document.querySelectorAll('.carousel-card');
+
+        function showSlide(index) {
+            cards.forEach((card, i) => {
+                card.classList.remove('active'); // Remove active class from all cards  
+            });
+            cards[index].classList.add('active'); // Add active class to the current card  
+
+            // Optional: Adjust the transform property for the carousel effect  
+            const offset = index * -100; // Move the carousel image left  
+            document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
+        }
+
+        function changeSlide(direction) {
+            currentSlide = (currentSlide + direction + cards.length) % cards.length; // Update the current slide index  
+            showSlide(currentSlide);
+        }
+
+        // Optional: Auto slide every 5 seconds  
+        setInterval(() => {
+            changeSlide(1);
+        }, 10000);
+
+        // Show the first slide on initial load  
+        showSlide(currentSlide);
+</script>
+
+
+
+    <script src="./css/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/all.min.js"></script>
+</body>
+
+</html>

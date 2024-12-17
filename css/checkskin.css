@@ -1,0 +1,97 @@
+.hidden {
+    display: none;
+}
+
+/* الخلفية المعتمة للنافذة المنبثقة */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* اللون المعتم للخلفية */
+    z-index: 999; /* التأكد من أن الخلفية تحت الفورم */
+}
+
+/* الفورم ليظهر كنافذة منبثقة */
+.shipping-form {
+    height: 400px;
+    background-color: #dcdad7;
+    padding: 20px;
+    border-radius: 10px; /* إضافة حواف دائرية */
+    box-shadow: 0px 5px 15px rgba(31, 31, 31, 0.5); /* إضافة ظل للنافذة */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* التأكد من أن الفورم فوق الخلفية */
+    width: 300px; /* عرض النافذة */
+}
+.he-control{
+    font-size: 20px;
+    color: #af9868;
+    padding: 15px;
+
+}
+.control{
+    display: block;
+
+}
+.fcontrol{
+    width: 200px;
+    margin: 5px;
+    margin-left: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.submit{
+    width: 100px;
+    font-size: 20px;
+    margin: 30px;
+    margin-left: 75px;
+    border: 1px solid transparent;
+    background: #dcdad7;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+      z-index: 999; 
+    display: none;
+}
+
+.shipping-message {
+    text-align: center;
+    background-color: #dcdad7;
+    color:#af9868 ;
+    padding: 20px;
+    padding-top: 10%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; 
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    display: none;
+}
+
+.modal-overlay.show,
+.shipping-message.show {
+    display: block;
+}
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer; 
+    font-size: 20px;
+    color: #5a5a5a;
+}

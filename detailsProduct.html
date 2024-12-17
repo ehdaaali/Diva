@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Product</title>
+    <link rel="stylesheet" href="./css/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/layouts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/detailsProduct.css">
+    <link rel="stylesheet" href="css/checkskin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- box icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Remix icon  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!--google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+            
+        <div class="user-interactions">
+            <div class="cart">
+                <button class="cart-btn"><i class="ri-shopping-cart-2-line"></i></button>   
+            </div>
+            
+        </div>
+</nav>
+<section class="navbar navbar-expand-lg navbar-light">
+    <div class="container main-nav">
+        <a class="navbar-brand" href="#">
+            <img class="animated rubberBand" id="diva-logo" src="./images/blackDiva.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" id="navbarToggler" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav-links" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutUs.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="" id="shopDropdown" onclick="toggleDropdown(event)">
+                        Shop
+                    </a>
+                    <ul class="dropdown-menu" id="dropdownMenu">
+                        <li class="nav-item"><a class="nav-link" href="skinCare.html">Skin Care</a></li>
+                        <li class="nav-item" id="sportWearDesign" style="width:max-content"><a class="nav-link"
+                                href="sportwear.html">Sport Wear</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="articles.html">Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactUs.html" style="width:max-content">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <!-- product section -->
+    <section class="product-section" id="product-detail-container">
+        <div class="product-section" id="product-detail-container">
+
+        </div>
+        
+        <!-- <img src="./images/product/7.jpg" class="product-image" alt="">
+            <div class="product-detail">
+                <h1 class="product-title"> Eucerin cream</h1>
+                <p class="product-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, corrupti. Quia nesciunt omnis maxime dolores dolor, nostrum vero,
+                     aperiam molestias exercitationem corporis et quasi doloribus?</p>
+                <dev class="ratings">
+                    <img src="images/star.png" class="star" alt="">
+                    <img src="images/star.png" class="star"  alt="">
+                    <img src="images/star.png"  class="star" alt="">
+                    <img src="images/star.png" class="star"  alt="">
+                    <img src="images/star0.png"  class="star" alt="">
+                    <span class="count-rating">3,679 reviews</span>
+                </dev> 
+                <p class="price">$350</p>   
+                <div class="btn">
+                    <button class="product-btn buy-btn"> buy now</button>
+                    <button class="product-btn cart-btn"> add to cart</button>
+                </div> 
+            </div>    -->
+            
+    </section>
+    <div class="cart-overlay show"></div>
+
+    <div class="carts show">
+        <div class="carts-header">
+            <i class="ri-arrow-right-fill carts-close"></i>
+            <h2>your cart</h2>
+        </div>
+        <div class="classList" id="product-list"></div>
+        <div class="carts-body" id="carts">
+        </div>
+        <div class="carts-footer">
+            <div>
+                <strong>Total</strong>
+                <span class="carts-total" id="total-price">0</span>
+            </div>
+            <button class="carts-clear" id="clear-cart">clear cart</button>
+            <button class="carts-checkout"  id="checkout-btn">CheckOut</button>
+            </div>
+        </div>
+        <div id="modal-overlay" class="modal-overlay hidden"></div>
+
+        <div id="shipping-form" class="shipping-form hidden">
+            <h2 class="he-control">Shipping Information</h2>
+            <form id="form">
+                <label for="name" class="control">Name:</label>
+                <input type="text" id="name" class="fcontrol" required><br>
+                <label for="address" class="control">Address:</label>
+                <input type="text" id="address" class="fcontrol" required><br>
+                <label for="phone" class="control">Phone:</label>
+                <input type="text" id="phone" class="fcontrol" required><br>
+                <button type="submit" value="submit" class="submit">Submit</button>
+            </form>
+        </div>
+         <!-- Shipped-->
+         <div id="modal-overlay" class="modal-overlay hidden"></div>
+
+         <div id="shipping-message" class="shipping-message hidden">
+             <i class="fas fa-times close-icon"></i>
+             <h2>Your order is being shipped!</h2>
+         </div>
+
+    <!-- <section class="details-des">
+        <h2 class="section-tit">details</h2>
+        <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis fugit et accusantium dolorem perferendis praesentium veniam pariatur numquam recusandae quis, atque suscipit exercitationem sit soluta tempore libero. Magni sed pariatur vel enim temporibus! Vero repellat delectus pariatur a omnis sit enim laborum minus rem voluptas temporibus porro, fuga libero non obcaecati, quod asperiores illo molestiae. Quod amet nostrum dolorum rerum explicabo exercitationem sequi quaerat illo quidem alias aspernatur minus corporis placeat non doloribus mollitia quos consectetur, dicta hic eligendi asperiores fugiat blanditiis?<br> <br><br>Ex quia, eveniet molestias, quidem perspiciatis ab suscipit, perferendis obcaecati ipsum mollitia fugiat aperiam quaerat libero. Facilis pariatur officia modi impedit consequatur reprehenderit, voluptates, eaque placeat magni, at obcaecati. Praesentium quisquam odit quidem ipsum amet a, eligendi, saepe expedita porro beatae consequatur cum consectetur, autem non quia delectus pariatur! Asperiores culpa dolor earum nemo hic officia iusto! Dolor, amet commodi enim adipisci esse aliquid repudiandae quisquam quasi alias.</p>
+
+    </section> -->
+
+    <!-- add review -->
+    <section class="review-section">
+        <h1 class="section-title"> <span>customers</span> reviews</h1>
+        <div class="review-container">
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"><img src="images/users/user1.jpg" alt=""></div>
+                <h2 class="review-title">best quality more than my expectation</h2>
+                <p class="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, modi.</p>
+            </div>
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"><img src="images/users/user2.jpg" alt=""></div>
+                <h2 class="review-title">on time delivery with best packaging</h2>
+                <p class="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, modi.</p>
+            </div>
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"><img src="images/users/user3.jpg" alt=""></div>
+                <h2 class="review-title">very helpful customer support</h2>
+                <p class="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, modi.</p>
+            </div>
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"><img src="images/users/user4.jpg" alt=""></div>
+                <h2 class="review-title">very easy to refund/return products</h2>
+                <p class="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, modi.</p>
+            </div>
+        </div>
+     </section>
+    <section class="add-review-section">
+        <h1 class="section-title"> add a review</h1>
+        <div class="rev">
+            <input type="text"  class="review-headline" name="" id="">
+            <textarea name="" id="" class="review-field"  ></textarea>
+            <p class="r-text">how much liked?</p>
+            <dev class="star-continer">
+                <img src="images/staro.png" class="r-star" alt="">
+                <img src="images/staro.png" class="r-star"  alt="">
+                <img src="images/staro.png"  class="r-star" alt="">
+                <img src="images/staro.png" class="r-star"  alt="">
+                <img src="images/staro.png"  class="r-star" alt="">
+            </dev>
+            <div>
+            <button class="btn-add-review">add review</button> 
+            </div>
+        </div>
+    </section>
+
+    <!-- review -->
+
+    
+
+
+     <!-- footer section -->
+     <footer>
+
+        <div class="footer">
+    
+            
+            <div class="footerSection">
+                <h5>Main</h5>
+                <a href="home.html">Home</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="contactUs.html">Contact Us</a>
+                <a href="team.html">Our Team</a>
+                <a href="testimonials.html">Testimonials</a>
+            </div>
+            <div class="footerSection">
+                <h5>Articles</h5>
+                
+                <a href="articles.html">Public Articles</a>
+            </div>
+            <div class="footerSection">
+                <h5>E-commerce</h5>
+                <a href="product.html">Skin Care Products</a>
+                <a href="productSport.html">Sport Wear</a>
+            </div>
+    
+        </div>
+        <h1 style="text-align: center;color:white;font-style: italic;font-family: 'Courier New', Courier, monospace;">
+            Keep
+            your SMILE you are a Diva</h1>
+    </footer>
+<script src="js/stylcart.js"></script>
+<script src="js/check.js"></script>
+
+    <!-- <script src="js/detailsProduct.js"></script> -->
+    <!-- <script src="js/home.js"></script> -->
+    <script type="module" src="js/productrait.js"></script>
+
+    <script type="module" src="js/detailsProduct.js"></script>
+    <script type="module" src="js/detailsProduct.js">
+      import { deletePrd, updateProd } from '/js/detailsProduct.js';
+          // Make the functions available globally
+              // window.showProducts = showProducts;
+              window.deletePrd = deletePrd;
+              window.updateProd = updateProd;
+    </script>
+    
+
+        <script type="module" src="js/productrait.js"></script>
+        <script type="module" src="js/productrait.js">
+        import { deletePrd, updateProd } from '/js/productrait.js';
+            // Make the functions available globally
+                // window.showProducts = showProducts;
+                window.deletePrd = deletePrd;
+                window.updateProd = updateProd;
+        </script>
+
+<script src="./css/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/navToggler.js"></script>       
+</body>
+</html>

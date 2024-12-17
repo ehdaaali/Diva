@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Wear</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/layouts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleSport.css">
+    <link rel="stylesheet" href="css/styleCartsport.css">
+    <link rel="stylesheet" href="css/check.css">
+    
+
+
+    <!-- box icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Remix icon  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!--google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+
+</head>
+<body>
+    <!-- Header -->
+    <header >
+        <!-- Start Top Nav -->
+      <!-- Main Navbar -->
+    
+         <a href="#" class="logo"> </a>
+
+        <!-- <ul class="navlist">
+            <li><a href="index.html">Skin care</a></li>
+            <li><a href="productSport.html">Product</a></li>
+            <li><a href="aboutUs.html">About</a></li>
+            <li><a href="login.html">Contact Us</a></li>
+        </ul> -->
+
+        <div class="nav-right">
+            <a class="cart">
+                <button class="cart-btn"><i class="ri-shopping-cart-2-line"></i></button>   
+            </a>
+            
+        </div>
+         
+    </header>
+    <section class="navbar navbar-expand-lg navbar-light">
+        <div class="container main-nav">
+          <a class="navbar-brand" href="#">
+            <img class="animated rubberBand" id="diva-logo" src="./images/blackDiva.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" id="navbarToggler" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse nav-links" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutUs.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="productSport.html" id="shopDropdown" onclick="toggleDropdown(event)">
+                    Shop
+                </a>
+                <ul class="dropdown-menu" id="dropdownMenu">
+                  <li class="nav-item"><a class="nav-link" href="skinCare.html">Skin Care</a></li>
+                  <li class="nav-item" id="sportWearDesign" style="width:max-content"><a class="nav-link" href="sportwear.html">Sport Wear</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="articles.html">Articles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactUs.html" style="width:max-content">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </section>
+
+    <!-- Home Section -->
+     <section class="home">
+        <div class="home-text" data-aos="fade-up">
+            <h6>New Prodect</h6>
+            <h2>New Prodect <br> ready to shopping</h2>
+            <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate hic quisquam nostrum repellat totam dolores?</p>
+            <a href="login.html" class="btn">Shop now
+                <i class="ri-arrow-right-line"></i>
+            </a>
+        </div>
+     </section>
+
+
+     <!-- Brands -->
+      <section class="banner">
+        <div class="banner_container">
+            <img src="images/img/banner-1 (1).png" alt="">
+            <img src="images/img/banner-4.png" alt="">
+            <img src="images/img/banner-5.png" alt="">
+            <img src="images/img/banner-8.png" alt="">
+            <img src="images/img/kl.jpg" alt="">
+            <img src="images/img/who-owns-chanel.jpeg" alt="">
+            <img src="images/img/clothing_logo_8.png" alt="">
+            <img src="images/img/gucci-transparent-gucci-free-free-png.webp" alt="">
+        </div>
+
+      </section>
+
+    
+
+     <!-- all Product -->
+
+     <section class="n-product">
+        <div class="center-text"  data-aos="fade-down">
+            <h2> Product</h2>
+        </div>
+        <div class="n-content" id="nSport-content" data-aos="zoom-in">
+            <!-- show only 6 product -->
+                    
+        </div>
+        <div class="n-btn"  data-aos="zoom-in">
+            <a href="productSport.html" class="btn2">View All</a>
+        </div>
+     </section>
+     <div class="cart-overlay show"></div>
+        <div class="carts show">
+            <div class="carts-header">
+                <i class="ri-arrow-right-fill carts-close"></i>
+                <h2>your cart</h2>
+            </div>
+            <div class="classList" id="product-list"></div>
+            <div class="carts-body" id="carts">
+            </div>
+            <div class="carts-footer">
+                <div>
+                    <strong>Total</strong>
+                    <span class="carts-total" id="total-price">0</span>
+                </div>
+                <button class="carts-clear" id="clear-cart">clear cart</button>
+                <button class="carts-checkout"  id="checkout-btn">CheckOut</button>
+            </div>
+        </div>
+        <div id="modal-overlay" class="modal-overlay hidden"></div>
+
+        <div id="shipping-form" class="shipping-form hidden">
+            <h2 class="he-control">Shipping Information</h2>
+            <form id="form">
+                <label for="name" class="control">Name:</label>
+                <input type="text" id="name" class="fcontrol" required><br>
+                <label for="address" class="control">Address:</label>
+                <input type="text" id="address" class="fcontrol" required><br>
+                <label for="phone" class="control">Phone:</label>
+                <input type="text" id="phone" class="fcontrol" required><br>
+                <button type="submit" value="submit" class="submit">Submit</button>
+            </form>
+        </div>
+        
+        <!-- Shipped-->
+         <!-- Shipped-->
+         <div id="modal-overlay" class="modal-overlay hidden"></div>
+
+         <div id="shipping-message" class="shipping-message hidden">
+             <i class="fas fa-times close-icon"></i>
+             <h2>Your order is being shipped!</h2>
+         </div>
+            <!-- feature -->
+     <section class="feature">
+            <div class="feature-content"  data-aos="fade-down">
+                <div class="box">
+                    <div class="f-icon">
+                        <i class="ri-bank-card-fill"></i>
+                    </div>
+
+                    <div class="f-text">
+                        <h3>Cach on Delivery</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nemo dolore quaerat! Id, in? Facere?</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="f-icon">
+                        <i class="ri-truck-fill"></i>
+                    </div>
+
+                    <div class="f-text">
+                        <h3>Free Shipping</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nemo dolore quaerat! Id, in? Facere?</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="f-icon">
+                        <i class="ri-customer-service-fill"></i>
+                    </div>
+
+                    <div class="f-text">
+                        <h3>30 days return</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nemo dolore quaerat! Id, in? Facere?</p>
+                    </div>
+                </div>
+
+            </div>
+        
+     </section>
+            <!-- Best selling -->
+            <section class="selling">
+                <div class="center-text"  data-aos="fade-up">
+                    <h2>Best Seller</h2>
+                </div>
+
+                <div class="selling-content"  data-aos="zoom-in-up" id="col">
+                        <!--Show only 3  Product  -->
+                      
+                </div>
+                
+
+            </section>
+
+            
+
+             <!-- footer section -->
+             <footer>
+
+                <div class="footer">
+            
+                    
+                    <div class="footerSection">
+                        <h5>Main</h5>
+                        <a href="home.html">Home</a>
+                        <a href="aboutUs.html">About Us</a>
+                        <a href="contactUs.html">Contact Us</a>
+                        <a href="team.html">Our Team</a>
+                        <a href="testimonials.html">Testimonials</a>
+                    </div>
+                    <div class="footerSection">
+                        <h5>Articles</h5>
+                        
+                        <a href="articles.html">Public Articles</a>
+                    </div>
+                    <div class="footerSection">
+                        <h5>E-commerce</h5>
+                        <a href="product.html">Skin Care Products</a>
+                        <a href="productSport.html">Sport Wear</a>
+                    </div>
+            
+                </div>
+                <h1 style="text-align: center;color:white;font-style: italic;font-family: 'Courier New', Courier, monospace;">
+                    Keep
+                    your SMILE you are a Diva</h1>
+            </footer>
+    <!-- js link -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 300,
+        duration: 1450,
+    });
+  </script>
+  <script src="js/stylcart.js"></script>
+  <script src="js/check.js"></script>
+
+   
+  
+<script type="module" src="js/sportCardProd.js"></script>
+<script type="module" src="js/sportCardProd.js">
+  import { deletePrd, updateProd } from '/js/sportCardProd.js';
+      // Make the functions available globally
+          // window.showProducts = showProducts;
+          window.deletePrd = deletePrd;
+          window.updateProd = updateProd;
+</script>
+  <script type="module" src="js/sportproduct.js"></script>
+  <script type="module" src="js/sportproduct.js">
+    import { deletePrd, updateProd } from '/js/sportproduct.js';
+        // Make the functions available globally
+            // window.showProducts = showProducts;
+            window.deletePrd = deletePrd;
+            window.updateProd = updateProd;
+  </script>
+  <script type="module" src="js/productrait.js"></script>
+  <script type="module" src="js/productrait.js">
+  import { deletePrd, updateProd } from '/js/productrait.js';
+      // Make the functions available globally
+          // window.showProducts = showProducts;
+          window.deletePrd = deletePrd;
+          window.updateProd = updateProd;
+  </script>
+  
+  <script src="./css/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/navToggler.js"></script>
+</body>
+</html>

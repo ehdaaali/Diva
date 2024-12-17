@@ -1,0 +1,324 @@
+/* product */
+.product-section {
+    align-items: center;
+    width: 100%;
+    height: 70%; /* تغيير من 700px إلى auto */
+    margin-top: 120px;
+    padding: 0 5vw;
+    display: flex;
+    /* flex-direction: column; تغيير من صف إلى عمود */
+    gap: 10px;
+    margin-top: 20%;
+}
+
+
+  .product-image {
+    height:400px;
+    width: 100%;
+
+    /* تغيير من 50% إلى auto */
+    object-fit: contain;
+    border-radius: 30%;
+}
+.product-detail {
+    padding-left: 10%;
+    width: 70%; /* Make cards full width */ 
+    /* مهم */
+    height: 100%;
+    margin-bottom: -50px; /* Add spacing between cards */
+}
+.product-title {
+    font-size: 50px;
+    color: rgb(225, 199, 168);
+}
+
+.product-des {
+    margin: 30px 0;
+    font-family: 'lato', sans-serif;
+    opacity: 0.5;
+    line-height: 28px;
+    font-size: 21px;
+}
+
+.ratings {
+    display: flex;
+}
+
+.ratings .star {
+    width: 31px;
+    height: 31px; /* إضافة px هنا */
+}
+
+.count-rating {
+    font-family: 'lato', sans-serif;
+    opacity: 0.4;
+    font-size: 15px;
+    margin-left: 22px;
+    line-height: 38px;
+}
+
+.price {
+    margin: 33px 0;
+    color: rgb(225, 199, 168);
+    font-size: 59px;
+}
+
+.product-btn {
+    border: none;
+    color: rgb(225, 199, 168);
+    padding: 14px 38px;
+    outline: none;
+    font-size: 22px;
+    margin-right: 9px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.buy-btn {
+    color: #ddd;
+    background-color: #d5be8b;
+}
+
+.details-des {
+    width: 100%;
+    padding: 100px 4vw 0;
+}
+
+.section-tit {
+    padding-bottom: 30px;
+    color: #564c36;
+}
+
+.desc {
+    font-size: 21px;
+    font-family: 'lato', sans-serif;
+    line-height: 28px;
+    opacity: 0.5;
+}
+
+.rev {
+    margin: 30px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.review-headline, .review-field {
+    color: #564c36;
+    border: 1px solid #d5be8b;
+    width: 100%;
+    height: 38px;
+    font-family: 'lato', sans-serif;
+    margin: 9px 0;
+    padding: 9px;
+    line-height: 38px;
+    outline: none;
+}
+
+.review-field {
+    height: 150px;
+    padding: 0 9px;
+    resize: none;
+}
+
+.review-headline:focus,
+.review-field:focus {
+    border-color: #a0b096;
+}
+
+.r-text {
+    color: #c9c9c9;
+    margin: 9px 0;
+    font-family: 'lato', sans-serif;
+    text-transform: uppercase;
+}
+
+.r-star {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.btn-add-review {
+    border: none;
+    color: #f7f5f5;
+    background-color: #d5be8b;
+    padding: 11px 19px;
+    outline: none;
+    font-size: 15px;
+    margin-top: 28px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .product-title {
+        font-size: 30px;
+    }
+    .product-des {
+        font-size: 16px;
+    }
+    .price {
+        font-size: 30px;
+    }
+    .product-btn {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+    .details-des {
+        padding: 50px 2vw 0;
+    }
+    .rev {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+
+/* Large devices (desktops, 900px and up) */
+@media  (max-width: 868px) {
+    .product-detail {
+        width: 100%; /* Make cards full width */ 
+        /* مهم */
+        height: 100%;
+        margin-bottom: -50px; /* Add spacing between cards */
+    }
+    .product-title{
+        /* مهم */
+        margin-top: 80%;  
+        font-size: 30px; /* Reduce font size */
+    }
+}
+@media (max-width: 868px) {
+   
+    /* .header-heading{
+        font-size: 60px;
+        color: #387b61;
+
+    } */
+    /* .header-heading span{
+        color: #387b61;
+    } */
+     .product-section{
+        display: grid;
+     }
+    .product-image {
+        margin-top: 30%;
+        height:200px;
+        width: 90%;
+        margin-bottom: -70%;
+        /* تغيير من 50% إلى auto */
+        object-fit: cover;
+        border-radius: 30%;
+    }
+    .product-detail {
+        /* margin-top: 20%; */
+        width: 90%; /* Make cards full width */ 
+        /* مهم */
+        height: 80%;
+        margin-bottom: -20px; /* Add spacing between cards */
+    }
+    .product-card {
+        width: 100%; /* Make cards full width */ 
+        /* مهم */
+        height: 100%;
+        margin-bottom: 20px; /* Add spacing between cards */
+    }
+    .section-title {
+        /* مهم */
+        margin-top: 42%;  
+        font-size: 30px; /* Reduce font size */
+    }
+    .mid-section{
+        width: 100%;
+        height: inherit;
+    }
+    .section-info{
+        width: 100%;
+    }
+    .section-info h1{
+        font-size: 30px;
+    }
+    .image-mid-section{
+        width: 100%;
+        height: inherit;
+    }
+    .collage-img{
+        border-radius: 20%;
+        position: absolute;
+        object-fit: cover;
+        opacity: 0.7;
+        transition: .5s;
+    }
+    .collage-img:nth-child(1){
+        width: 200px;
+        height: 200px;
+        /* top: 20px; */
+        left: 40px;
+    }
+    .collage-img:nth-child(2){
+        width: 200px;
+        height: 200px;
+        top: 200px;
+        left: 50px;
+    }
+    .collage-img:nth-child(3){
+        width: 200px;
+        height: 200px;
+        top: 100px;
+        left: 150px;
+    }
+   
+
+    .allproduct-center{
+            width: 100%;
+            height: 25px;
+            align-items: center;
+            padding-top: 115px;
+            padding-left: 20rem;
+    }
+    .cart-btn {
+        font-size: 24px; /* Adjust button size */
+    }
+
+    .review-container {
+        flex-direction: column; /* Stack reviews vertically */
+    }
+
+    .review-card {
+        width: 100%; /* Make review cards full width */
+        margin-bottom: 20px; /* Add spacing */
+    }
+
+    
+}
+@media (max-width: 480) {
+    .product-section{
+        display: grid;
+        /* height: 400px; */
+     }
+    .product-image {
+        margin-top: 90%;
+        height:50px;
+        width: 40%;
+        margin-bottom: -70%;
+        /* تغيير من 50% إلى auto */
+        object-fit: cover;
+        border-radius: 30%;
+    }
+    .product-detail {
+        /* margin-top: 20%; */
+        width: 90%; /* Make cards full width */ 
+        /* مهم */
+        height: 80%;
+        margin-bottom: -20px; /* Add spacing between cards */
+    }
+    .product-card {
+        width: 100%; /* Make cards full width */ 
+        /* مهم */
+        height: 100%;
+        margin-bottom: 20px; /* Add spacing between cards */
+    }
+}

@@ -1,0 +1,257 @@
+/* .navbar {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 9;
+    transition: 0.5s;
+    background: rgba(243, 218, 222, 0.1);
+} */
+
+/* .navbar.bg {
+    background: #fce4e4;
+}
+ */
+.links-container {
+    color: #fce4e4;
+}
+
+.link,
+.active,
+.cart-btn,
+.user-icon {
+    color: #e4b5a5;
+} 
+
+/* product */
+.product-section {
+    /* align-items: center; */
+    width: 100%;
+    height: 600px; /* تغيير من 700px إلى auto */
+    margin-top: 12%;
+    padding: 0 5vw;
+    display: flex;
+    /* flex-direction: column; تغيير من صف إلى عمود */
+    gap: 40px;
+    /* margin-top: 5%; */
+}
+
+.img-img .product-image {
+    margin-top: 15%;
+    width: 80%;
+    object-fit: contain;
+}
+
+.product-image {
+    width: 100%;
+    height: auto; /* تغيير من 50% إلى auto */
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.product-title {
+    margin-top: 10%;
+    font-size: 40px;
+    color: #e4b5a5;
+}
+
+.product-des {
+    margin: 30px 0;
+    font-family: 'Lato', sans-serif;
+    opacity: 0.5;
+    line-height: 28px;
+    font-size: 20px;
+}
+
+.price {
+    margin: 33px 0;
+    color: #e4b5a5;
+    font-size: 40px;
+}
+
+.product-btn {
+    border: none;
+    color: #e4b5a5;
+    padding: 14px 38px;
+    margin-bottom: 50px;
+    outline: none;
+    font-size: 22px;
+    margin-right: 25px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.product-btn:hover {
+    color: #a09a9a;
+}
+
+.buy-btn {
+    color: #ddd;
+    background-color: #e4b5a5;
+}
+
+.buy-btn:hover {
+    border-radius: none;
+    border: 0 solid transparent;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    color: transparent;
+    font-size: 18px;
+    font-weight: 500;
+    border: 0 solid transparent;
+    transition: all 0.6s;
+    border-radius: 0%;
+}
+
+.btn:hover {
+    transform: scale(0.9) translateY(-6px);
+    border: 0 solid transparent;
+    background: transparent;
+}
+
+/* Media Queries for Responsiveness */
+@media  (max-width: 1300px){
+    /* .navbar {
+        height: 60px;
+    } */
+    
+    .product-section {
+        /* align-items: center; */
+        margin-top: 20%;
+        width: 70%;
+        /* flex-direction: column; تغيير من صف إلى عمود */
+        gap: 10px;
+        /* margin-bottom: 10%; */
+    }
+    .product-image {
+        padding-right: 20%;
+    }
+    .imgcont .product-image {
+        object-fit: contain;
+    }
+    
+    .product-title {
+        font-size: 40px;
+        color: #e4b5a5;
+        /* padding: 10%; */
+    }
+    .product-des {
+        /* margin-top: 19%; */
+
+        font-size: 16px; 
+    }
+    .btn {
+        display: inline-block;
+        padding: 12px 20px;
+        color: transparent;
+        font-size: 18px;
+        font-weight: 500;
+        border: 0 solid transparent;
+        transition: all 0.6s;
+        border-radius: 0%;
+        /* margin-bottom: -9%; */
+    }
+}
+
+
+@media (max-width: 868px) {
+    /* .navbar {
+        height: 60px;
+    } */
+
+    .product-section {
+        /* align-items: center; */
+        margin-top: 30%;
+        /* flex-direction: column; تغيير من صف إلى عمود */
+        gap: 10px;
+        /* margin-bottom: 10%; */
+    }
+    
+     .product-image {
+                
+        object-fit: contain;
+    }
+    
+    .sport .product-title {
+        font-size: 40px;
+        color: #e4b5a5;
+        margin-top: 80%;
+    }
+    .product-des {
+        margin-top: 19%;
+
+        font-size: 16px; 
+    }
+    .product-btn {
+        padding: 7px 18px;
+        margin-bottom: 10px;
+        outline: none;
+        font-size: 22px;
+        margin-right: 25px;
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+    
+
+    
+    .product-btn:hover {
+        color: #a09a9a;
+    }
+    
+    .buy-btn {
+        padding-top: 40px;
+        color: #ddd;
+        background-color: #e4b5a5;
+    }
+    
+    .buy-btn:hover {
+        border-radius: none;
+        border: 0 solid transparent;
+    }
+    
+    .btn {
+        display: inline-block;
+        width: 100%;
+        height: 190;
+        padding: 7px 10px;
+        
+        margin-bottom: 9%;
+    }
+
+    
+    .btn:hover {
+        transform: scale(0.9) translateY(-6px);
+        border: 0 solid transparent;
+        background: transparent;
+    }
+
+    .product-section {
+        flex-direction: column; 
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .sport .product-title {
+        margin-top: 80%;
+        font-size: 38px; 
+    }
+
+    .product-des {
+        font-size: 16px; 
+    }
+
+    .price {
+        font-size: 28px; 
+    }
+
+    .product-btn {
+        font-size: 18px;
+    }
+}
